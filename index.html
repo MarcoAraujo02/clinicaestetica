@@ -169,6 +169,32 @@ header.scrolled{background:rgba(251,248,243,.82);backdrop-filter:blur(14px);box-
 .g-badge b{color:var(--ink);font-weight:500}
 .g-badge .g{font-weight:600;letter-spacing:.02em}
 
+/* FORMAÇÃO / MENTORIA */
+.pro{background:linear-gradient(180deg,var(--ivory),var(--ivory-2))}
+.pro-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:stretch}
+.pro-card{background:#fff;border:1px solid var(--gold-line);border-radius:24px;padding:44px 40px;position:relative;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;overflow:hidden}
+.pro-card .ptag{display:inline-flex;align-items:center;gap:8px;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);border:1px solid var(--gold-line);padding:6px 14px;border-radius:100px;align-self:flex-start;margin-bottom:20px}
+.pro-card h3{font-size:1.9rem;margin-bottom:10px}
+.pro-card .psub{color:var(--taupe);margin-bottom:24px;font-size:.98rem}
+.pro-list{display:grid;grid-template-columns:1fr 1fr;gap:11px 20px;margin-bottom:26px;list-style:none}
+.pro-list li{position:relative;padding-left:20px;font-size:.9rem;color:var(--ink);line-height:1.4}
+.pro-list li::before{content:"";position:absolute;left:0;top:.45em;width:8px;height:8px;border-radius:50%;background:linear-gradient(var(--gold-soft),var(--gold-deep))}
+.bonus{border-top:1px solid var(--gold-line);padding-top:20px;margin-bottom:26px}
+.bonus b{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);display:block;margin-bottom:12px}
+.bonus-tags{display:flex;flex-wrap:wrap;gap:8px}
+.bonus-tags span{font-size:.8rem;background:var(--cream);border:1px solid var(--gold-line);border-radius:100px;padding:6px 14px;color:var(--ink)}
+.pro-card .pfoot{margin-top:auto}
+.pro-card .pnote{font-size:.76rem;color:var(--taupe);margin-top:12px;letter-spacing:.02em}
+.pro-card.vip{background:linear-gradient(160deg,#2A2521,#3a2f1f);border-color:rgba(224,199,150,.3);color:#fff}
+.pro-card.vip::after{content:"VIP";position:absolute;top:20px;right:-34px;transform:rotate(45deg);background:linear-gradient(120deg,var(--gold-deep),var(--gold));color:#fff;font-size:.66rem;letter-spacing:.24em;padding:6px 44px;font-family:'Jost',sans-serif}
+.pro-card.vip h3{color:#fff}
+.pro-card.vip .psub{color:rgba(255,255,255,.75)}
+.pro-card.vip .ptag{color:var(--gold-soft);border-color:rgba(224,199,150,.4)}
+.pro-card.vip .pro-list li{color:rgba(255,255,255,.85)}
+.pro-card.vip .bonus{border-color:rgba(224,199,150,.25)}
+.pro-card.vip .bonus b{color:var(--gold-soft)}
+.pro-card.vip .bonus-tags span{background:rgba(224,199,150,.1);border-color:rgba(224,199,150,.3);color:#fff}
+
 /* CONTATO */
 .cta{position:relative;overflow:hidden;background:linear-gradient(150deg,var(--ivory-2),#f2e6cf)}
 .cta .beams{opacity:.7}
@@ -228,6 +254,7 @@ footer .fcopy a{color:var(--gold-soft)}
   .hilite .hl-art{min-height:200px}
   .dif-grid{grid-template-columns:1fr}
   .rev-grid{grid-template-columns:1fr}
+  .pro-grid{grid-template-columns:1fr}
 }
 @media(max-width:600px){
   .wrap{padding:0 20px}
@@ -236,6 +263,8 @@ footer .fcopy a{color:var(--gold-soft)}
   .hilite .hl-copy{padding:40px 30px}
   .hero-logo-card{padding:38px 30px}
   .contact-meta{gap:18px}
+  .pro-card{padding:36px 28px}
+  .pro-list{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
@@ -256,6 +285,7 @@ footer .fcopy a{color:var(--gold-soft)}
       <a href="#sobre">Sobre</a>
       <a href="#procedimentos">Procedimentos</a>
       <a href="#resultados">Resultados</a>
+      <a href="#formacao">Formação</a>
       <a href="#avaliacoes">Avaliações</a>
       <a href="#contato">Contato</a>
     </nav>
@@ -448,6 +478,72 @@ footer .fcopy a{color:var(--gold-soft)}
         <p class="quote">“Eu amei a clínica, ficou linda demais!! Ambiente: 10/10. Atendimento: 10/10.”</p>
         <div class="who"><span class="av" style="background:#B98A54">A</span><div><b>Amanda Soares Kunzler</b><span>Avaliação no Google</span></div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMAÇÃO / MENTORIA -->
+<section class="block pro" id="formacao">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Para profissionais</span>
+      <h2>Formação &amp; <em>Mentoria</em></h2>
+      <p>Para quem quer elevar o nível na estética corporal e dominar a harmonização glútea com técnica e segurança.</p>
+      <div class="flourish"></div>
+    </div>
+    <div class="pro-grid">
+
+      <div class="pro-card reveal d1">
+        <span class="ptag">Perfect Butt · Formação</span>
+        <h3>Harmonização Glútea</h3>
+        <p class="psub">Formação completa para profissionais que querem sair do básico e se especializar: aprender a pensar o glúteo como um todo — avaliar, planejar e executar com mais segurança e precisão.</p>
+        <ul class="pro-list">
+          <li>Anatomia e avaliação glútea</li>
+          <li>Planejamento individualizado</li>
+          <li>Volume, projeção e contorno</li>
+          <li>Flacidez, celulite e fibroses</li>
+          <li>Bioestimulação e volumização</li>
+          <li>Subcisão e irregularidades</li>
+          <li>Prática supervisionada</li>
+          <li>Indicações e intercorrências</li>
+          <li>Como estruturar o protocolo na clínica</li>
+        </ul>
+        <div class="bonus">
+          <b>Bônus inclusos</b>
+          <div class="bonus-tags">
+            <span>Book fotográfico</span><span>Caixa de mimos</span><span>Material de apoio</span><span>Grupo VIP de alunas</span>
+          </div>
+        </div>
+        <div class="pfoot">
+          <a href="https://wa.me/5555999999999?text=PERFECT" class="btn btn-gold magnetic" target="_blank" rel="noopener">Quero saber da próxima turma</a>
+          <p class="pnote">Turmas reduzidas e vagas limitadas — chame no direct com a palavra <b>PERFECT</b>.</p>
+        </div>
+      </div>
+
+      <div class="pro-card vip reveal d2">
+        <span class="ptag">Mentoria VIP · Protocolo Perfect</span>
+        <h3>Mentoria VIP</h3>
+        <p class="psub">Prática, individualizada e feita para quem deseja sair realmente capacitada — com segurança e confiança para aplicar os protocolos e transformar resultados.</p>
+        <ul class="pro-list">
+          <li>Formato prático e individualizado</li>
+          <li>Protocolo Perfect completo</li>
+          <li>Acompanhamento próximo</li>
+          <li>Segurança na execução</li>
+          <li>Estruturação na sua clínica</li>
+          <li>Vagas limitadas</li>
+        </ul>
+        <div class="bonus">
+          <b>Bônus inclusos</b>
+          <div class="bonus-tags">
+            <span>Book fotográfico</span><span>Caixa de mimos</span><span>Material de apoio</span><span>Grupo VIP</span>
+          </div>
+        </div>
+        <div class="pfoot">
+          <a href="https://wa.me/5555999999999?text=MENTORIA" class="btn btn-gold magnetic" target="_blank" rel="noopener">Quero ser a próxima</a>
+          <p class="pnote">Vagas limitadas — garanta a sua no direct.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
