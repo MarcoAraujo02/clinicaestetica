@@ -74,6 +74,13 @@ header.scrolled{background:rgba(251,248,243,.82);backdrop-filter:blur(14px);box-
 .hero-logo-card{justify-self:center;position:relative;background:linear-gradient(160deg,#fff,#fbf6ec);border:1px solid var(--gold-line);border-radius:26px;padding:54px 46px;box-shadow:var(--shadow);transform-style:preserve-3d;transition:transform .3s}
 .hero-logo-card img{width:clamp(240px,30vw,360px)}
 .hero-logo-card .cap{text-align:center;margin-top:14px;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep)}
+.hero-photo{position:relative;justify-self:center;width:100%;max-width:410px;border-radius:26px;overflow:hidden;border:1px solid var(--gold-line);box-shadow:var(--shadow);transition:transform .3s;background:#e9e4dc}
+.hero-photo img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;object-position:center 14%}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(42,37,33,.6),transparent 46%);pointer-events:none}
+.hero-photo .hp-badge{position:absolute;left:24px;bottom:22px;z-index:2;color:#fff}
+.hero-photo .hp-badge b{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.55rem;display:block;line-height:1.1}
+.hero-photo .hp-badge span{font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-soft)}
+.hero-photo.hload{animation:cardIn 1.1s cubic-bezier(.2,.7,.2,1) .3s forwards;opacity:0}
 .scroll-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:.8}
 .scroll-hint .line{width:1px;height:38px;background:linear-gradient(var(--gold),transparent);animation:pulse 2.2s ease-in-out infinite;transform-origin:top}
 @keyframes pulse{0%,100%{transform:scaleY(.4);opacity:.4}50%{transform:scaleY(1);opacity:1}}
@@ -262,6 +269,7 @@ footer .fcopy a{color:var(--gold-soft)}
   .grid-serv{grid-template-columns:1fr}
   .hilite .hl-copy{padding:40px 30px}
   .hero-logo-card{padding:38px 30px}
+  .hero-photo{max-width:340px}
   .contact-meta{gap:18px}
   .pro-card{padding:36px 28px}
   .pro-list{grid-template-columns:1fr}
@@ -308,9 +316,9 @@ footer .fcopy a{color:var(--gold-soft)}
         <a href="#procedimentos" class="btn btn-ghost">Ver procedimentos</a>
       </div>
     </div>
-    <div class="hero-logo-card hload tilt">
-      <img src="logo.jpeg" alt="Daniela Kunzler — Enfermeira Esteta">
-      <div class="cap">Realçando a sua beleza natural</div>
+    <div class="hero-photo hload tilt">
+      <img src="foto_perfil.jpeg" alt="Daniela Kunzler, enfermeira esteta">
+      <span class="hp-badge"><b>Daniela Kunzler</b><span>Enfermeira Esteta</span></span>
     </div>
   </div>
   <div class="scroll-hint"><span>Explore</span><span class="line"></span></div>
